@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    background-color: black;
+  }
+  
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+  
+  .logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+    background: transparent;
+    height: 9vh;
+    font-size: 17px;
+    text-shadow: 0 0 8px white;
+  }
+  
+  main {
+    background: url("img/ghostwallpaper2vinheta.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-list li {
+    padding: 5px;
+    letter-spacing: 3px;
+    margin-left: 32px;
+    align-items: center;
+    transition: 0.5s;
+  }
+  
+  .mobile-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background: #000000;
+    margin: 0px;
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 999px) {
+    body {
+      overflow-x: hidden;
+    }
+    .nav-list {
+      position: absolute;
+      top: 8vh;
+      right: 0;
+      width: 40vw;
+      height: 92vh;
+      background: #0f0f0f;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;   
+    }
+    .nav-list li {
+      margin-left: 0;
+      opacity: 0;
+    }
+    .mobile-menu {
+      display: block;
+    }
+  }
+  
+  .nav-list.active {
+    transform: translateX(0);
+  }
+  
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+  }
+  
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+  }
+
+  .jinfrase {
+    position: absolute;
+    font-size: 24px;
+    margin-left: 27px;
+    top: 205px;
+    color: white;
+    text-shadow: 0 0 15px rgb(255, 255, 255);
+  }
+
+  .jinfrase2 {
+    position: absolute;
+    font-size: 15px;
+    margin-left: 67px;
+    top: 237px;
+    color: white;
+    text-shadow: 0 0 15px rgb(255, 255, 255);
+  }
+
+  .jinfrase3 {
+    position: absolute;
+    font-size: 15px;
+    margin-left: 340px;
+    top: 280px;
+    color: white;
+    text-shadow: 0 0 15px rgb(255, 255, 255);
+  }
+
+  .jinfrase4 {
+    position: absolute;
+    font-size: 15px;
+    margin-left: 140px;
+    top: 260px;
+    color: white;
+    text-shadow: 0 0 15px rgb(255, 255, 255);
+  }
+
+  .logo2 {
+    position: absolute;
+    top: 850px;
+    left: 750px;
+    transition: 0.5s;
+  }
+
+  .logo2:hover {
+    transform: scale(1.1);
+  }
+
+  @font-face {
+    font-family: ghost;
+    src: url("fonts/Tsushima.otf") format("opentype");
+}
+
+  @font-face {
+    font-family: vogue;
+    src: url("fonts/Vogue.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: osake;
+  src: url("fonts/Osake.otf") format("opentype");
+}
+
+.ghostprologo {
+    width: 100%;
+    position: absolute;
+    top: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ghostprologotitulo {
+  color: white;
+  text-shadow: 0 0 5px white;
+  font-size: 50px;
+  font-family: "osake";
+  align-items: center;
+}
+
+.ghostprologotitulo, .ghostprologotitulo2 {
+  visibility: hidden;
+}
+
+.ghostprologotitulo2 {
+  color: white;
+  text-shadow: 0 0 5px white;
+  font-size: 55px;
+  font-family: "osake";
+  align-items: center;
+}
+
+spam {
+  color: rgb(255, 46, 46);
+  font-weight: bold;
+  text-shadow: 0 0 30px 255, 46, 46;
+}
+
+.ghostprologotexto {
+    width: 100%;
+    position: absolute;
+    top: 1550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+.ghostprologotexto1 {
+  width: 500px;
+  color: white;
+  font-size: 20px;
+  align-items: center;
+  margin: 5px;
+}
+
+.ghostprologotexto2 {
+  width: 500px;
+  color: white;
+  font-size: 20px;
+  align-items: center;
+  margin: 5px;
+}
+
+.ghostprologotexto3 {
+  width: 500px;
+  color: white;
+  font-size: 20px;
+  align-items: center;
+  margin: 5px;
+}
+
+.ghostprologotexto4 {
+    width: 500px;
+    color: white;
+    font-size: 20px;
+    align-items: center;
+    margin: 5px;
+  }
+
+.ghostprologotexto1, .ghostprologotexto2, .ghostprologotexto3, .ghostprologotexto4 {
+  visibility: hidden;
+}
+
+.jinfrase, .jinfrase2, .jinfrase3, .jinfrase4 {
+  visibility: hidden;
+}

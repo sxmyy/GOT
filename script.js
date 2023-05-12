@@ -44,3 +44,8 @@ sr.reveal('.ghostprologotexto3', {
     rotate: {x:0, y:80, z:0},
     duration: 2500
 })
+
+sr.reveal('.ghostprologotexto4', {
+    rotate: {x:0, y:80, z:0},
+    duration: 2500
+})
